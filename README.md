@@ -1,0 +1,1 @@
+A simple and stylish weather forecast web application built using Tailwind CSS and the OpenWeatherMap API. Users can search for any city, view the current weather, and get a 5-day forecast. Recently searched cities are saved locally for quick access.
