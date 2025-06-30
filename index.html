@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast App</title>
+    <link rel="stylesheet" href="./src/output.css">
+</head>
+<body class = "bg-blue-100 min-h-screen flex flex-col items-centre p-4">
+    <h1 class ="text-xl font bold mb-6 text-center text-slate-700">Weather Forecast</h1>
+        <div class="w-full max-w-md bg-white rounded-lg shadow p-4">
+            <div class="flex gap-2 mb-4">
+                <input id="cityInput" type="text" placeholder="Enter city name" class="flex-1 border p-2 rounded"/>
+                <button id="searchBtn" class="bg-blue-500 text-white px-4 py-2 rounded">Search</button>
+            </div>
+            <select id="recentCities" class="w-full border rounded p-2 mb-4 hidden">
+                <option>Select recent city</option>
+            </select>
+             <div id="weatherDisplay" class="hidden">
+                <h2 class="text-x1 font-semibold mb-2" id="locationName"></h2>
+                <div id="currentWeather" class="mb-2"></div>
+                <div id="extendedForecast"></div>
+             </div>
+             <div id="errorMsg" class="text-red-600 mt-2 text-sm"></div>
+             <button id="clearRecent" class="bg-red-500 text-white px-4 py-2 rounded mt-2">Clear Recent Cities</button>
+        </div>
+
+        <script src="app.js"></script>
+</body>
+</html>
